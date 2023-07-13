@@ -16,6 +16,7 @@ const App: FunctionComponent = () => {
 
   const imageWidth = containerWidth / IMAGE_LENGTH;
   const imageWidthWithHover = imageWidth + (imageWidth * 66) / 100;
+  const remainingImageWidth = (containerWidth - imageWidthWithHover) / IMAGE_LENGTH - 1;
 
   const [hoverElement, setHoverElement] = useState<number | undefined>(undefined);
 
@@ -23,8 +24,15 @@ const App: FunctionComponent = () => {
   console.log({ containerWidth, imageWidth, imageWidthWithHover });
 
   const getImageWidth = (key: number) => {
-    const width = hoverElement === key ? imageWidthWithHover : imageWidth;
-    return `${width}px`;
+    if (hoverElement) {
+      if (hoverElement === key) {
+        return imageWidthWithHover;
+      } else {
+        return remainingImageWidth;
+      }
+    } else {
+      return imageWidth;
+    }
   };
 
   return (
@@ -42,6 +50,7 @@ const App: FunctionComponent = () => {
                   style={{ width: getImageWidth(imageKey) }}
                   onMouseEnter={() => setHoverElement(imageKey)}
                   onMouseLeave={() => setHoverElement(undefined)}
+                  className="h-96 transition-width"
                 />
               );
             })}

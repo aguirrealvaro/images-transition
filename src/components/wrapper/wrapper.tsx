@@ -7,7 +7,7 @@ type WrapperProps = {
 };
 
 const Wrapper: FunctionComponent<WrapperProps> = ({ children, className }) => {
-  return <div className={cn("mx-auto w-4/5 max-w-6xl sm:w-11/12", className)}>{children}</div>;
+  return <div className={cn("mx-auto w-4/5 max-w-6xl", className)}>{children}</div>;
 };
 
 export { Wrapper };
