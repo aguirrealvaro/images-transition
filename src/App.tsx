@@ -15,6 +15,17 @@ const App: FunctionComponent = () => {
   }, []);
 
   const imageWidth = containerWidth / IMAGE_LENGTH;
+  const imageWidthWithHover = imageWidth + (imageWidth * 66) / 100;
+
+  const [hoverElement, setHoverElement] = useState<number | undefined>(undefined);
+
+  console.log(hoverElement);
+  console.log({ containerWidth, imageWidth, imageWidthWithHover });
+
+  const getImageWidth = (key: number) => {
+    const width = hoverElement === key ? imageWidthWithHover : imageWidth;
+    return `${width}px`;
+  };
 
   return (
     <Layout>
@@ -22,12 +33,15 @@ const App: FunctionComponent = () => {
         <Wrapper>
           <div className="flex" ref={containerRef}>
             {imagesKeys.map((key) => {
+              const imageKey = key + 1;
               return (
                 <img
-                  src={`/${key + 1}.jpg`}
+                  src={`/${imageKey}.jpg`}
                   alt="imagen"
-                  key={key}
-                  style={{ width: `${imageWidth}px` }}
+                  key={imageKey}
+                  style={{ width: getImageWidth(imageKey) }}
+                  onMouseEnter={() => setHoverElement(imageKey)}
+                  onMouseLeave={() => setHoverElement(undefined)}
                 />
               );
             })}
