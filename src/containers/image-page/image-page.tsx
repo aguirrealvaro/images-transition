@@ -1,19 +1,22 @@
 import { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
 import { Wrapper } from "@/components";
+import { cn } from "@/utils/cn";
 
 const ImagePage: FunctionComponent = () => {
   const { image } = useParams<{ image: string }>();
 
+  const isEven = image ? parseInt(image) % 2 === 1 : false;
+
   return (
     <div className="flex h-full items-center">
       <Wrapper>
-        <div className="flex gap-12">
+        <div className={cn("flex gap-12", isEven ? "flex-row" : "flex-col")}>
           <div className="flex-1">
             <img
               src={`/${image}.jpg`}
               alt="imagen"
-              className="rounded-lg shadow-2xl"
+              className={cn("rounded-lg shadow-2xl", isEven ? "" : "mx-auto w-1/2")}
               //@ts-ignore
               style={{ viewTransitionName: `image-${image}` }}
             />
