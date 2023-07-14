@@ -15,7 +15,7 @@ const App: FunctionComponent = () => {
               const imageKey = key + 1;
               return (
                 <div key={imageKey} className="flex-1   ">
-                  <img src={`/${imageKey}.jpg`} alt="imagen" />
+                  <img src={`/${imageKey}.jpg`} alt="imagen" className="rounded-sm" />
                 </div>
               );
             })}
