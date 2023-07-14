@@ -1,13 +1,12 @@
-import { FunctionComponent, ReactNode } from "react";
+import { FunctionComponent } from "react";
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
+const Layout: FunctionComponent = () => {
   return (
     <div className="flex h-screen flex-col">
-      <main className="flex-1">{children}</main>
+      <main className="flex-1">
+        <Outlet />
+      </main>
     </div>
   );
 };
