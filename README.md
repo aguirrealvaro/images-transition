@@ -1,3 +1,3 @@
-# React Vite Template
+# images-transitions
 
-Template of a react production-ready application with Vite, Typescript, Tailwind, Prettier, ESlint, and Pre-commit
+Prcticing with View Transitions API. Clone of [https://shu-gallery.vercel.app/](https://shu-gallery.vercel.app/)
