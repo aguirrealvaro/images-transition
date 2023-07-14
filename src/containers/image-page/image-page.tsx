@@ -10,7 +10,13 @@ const ImagePage: FunctionComponent = () => {
       <Wrapper>
         <div className="flex gap-12">
           <div className="flex-1">
-            <img src={`/${image}.jpg`} alt="imagen" className="rounded-lg shadow-2xl" />
+            <img
+              src={`/${image}.jpg`}
+              alt="imagen"
+              className="rounded-lg shadow-2xl"
+              //@ts-ignore
+              style={{ viewTransitionName: `image-${image}` }}
+            />
           </div>
           <div className="flex flex-1 items-center">
             <p className="text-text-secondary">

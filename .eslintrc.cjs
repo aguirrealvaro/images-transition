@@ -18,6 +18,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "warn",
     "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
     "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "error",
     "prettier/prettier": "error",
