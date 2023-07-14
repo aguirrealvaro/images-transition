@@ -15,6 +15,12 @@ module.exports = {
         "text-primary": "var(--text-primary)",
         "text-secondary": "var(--text-secondary)",
       },
+      flex: {
+        1.5: "1.5 1.5 0%",
+      },
+      transitionProperty: {
+        flex: "flex",
+      },
     },
   },
   plugins: [],

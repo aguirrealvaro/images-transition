@@ -12,7 +12,11 @@ const Home: FunctionComponent = () => {
           {imagesKeys.map((key) => {
             const imageKey = key + 1;
             return (
-              <Link to={`${imageKey}`} key={imageKey} className="flex-1">
+              <Link
+                to={`${imageKey}`}
+                key={imageKey}
+                className="flex-1 transition-flex duration-300 ease-in hover:flex-1.5"
+              >
                 <img
                   src={`/${imageKey}.jpg`}
                   alt="imagen"
