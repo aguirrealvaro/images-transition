@@ -9,7 +9,7 @@ const Header: FunctionComponent = () => {
     <header className="fixed inset-x-0 my-12">
       <Wrapper>
         <div className=" flex w-full flex-col items-center justify-center">
-          <h1 className="mb-6 text-3xl">
+          <h1 className="mb-6 text-3xl text-text-heading">
             <Link to="/" className="hover:text-blue-600">
               All Photos
             </Link>

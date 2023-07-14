@@ -13,7 +13,7 @@ const ImagePage: FunctionComponent = () => {
             <img src={`/${image}.jpg`} alt="imagen" className="rounded-sm" />
           </div>
           <div className="flex flex-1 items-center">
-            <p>
+            <p className="text-text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod reiciendis
               rerum, alias voluptas distinctio quibusdam dicta, accusamus aut vel provident,
               magnam animi molestiae saepe at a repellendus porro adipisci.
