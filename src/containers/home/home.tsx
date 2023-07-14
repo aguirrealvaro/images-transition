@@ -13,7 +13,11 @@ const Home: FunctionComponent = () => {
             const imageKey = key + 1;
             return (
               <Link to={`${imageKey}`} key={imageKey} className="flex-1">
-                <img src={`/${imageKey}.jpg`} alt="imagen" className="rounded-sm" />
+                <img
+                  src={`/${imageKey}.jpg`}
+                  alt="imagen"
+                  className="h-96 rounded-sm object-cover"
+                />
               </Link>
             );
           })}
