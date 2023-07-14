@@ -1,3 +1,9 @@
 # images-transitions
 
-Prcticing with View Transitions API. Clone of [https://shu-gallery.vercel.app/](https://shu-gallery.vercel.app/)
+Practicing with View Transitions API. Clone of [https://shu-gallery.vercel.app/](https://shu-gallery.vercel.app/)
+
+### To do:
+
+- Header not fixed
+- Even image page
+- Fix transitions
