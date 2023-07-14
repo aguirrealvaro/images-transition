@@ -9,7 +9,7 @@ const ImagePage: FunctionComponent = () => {
     <div className="flex h-full items-center">
       <Wrapper>
         <div className="flex gap-12">
-          <div className="w-96">
+          <div className="flex-1">
             <img src={`/${image}.jpg`} alt="imagen" className="rounded-lg shadow-2xl" />
           </div>
           <div className="flex flex-1 items-center">
