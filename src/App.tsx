@@ -1,4 +1,4 @@
-import { FunctionComponent, useLayoutEffect, useRef, useState } from "react";
+import { FunctionComponent } from "react";
 import "@/styles/globals.css";
 import { Layout, Wrapper } from "@/components";
 
@@ -6,52 +6,17 @@ const IMAGE_LENGTH = 5;
 const imagesKeys = Array.from(Array(IMAGE_LENGTH).keys());
 
 const App: FunctionComponent = () => {
-  const [containerWidth, setContainerWidth] = useState<number>(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useLayoutEffect(() => {
-    if (!containerRef.current) return;
-    setContainerWidth(containerRef.current.offsetWidth);
-  }, []);
-
-  const imageWidth = 180;
-  const imageWidthWithHover = 300;
-  const remainingImageWidth = 150;
-
-  const [hoverElement, setHoverElement] = useState<number | undefined>(undefined);
-
-  console.log(hoverElement);
-  console.log({ containerWidth, imageWidth, imageWidthWithHover });
-
-  const getImageWidth = (key: number) => {
-    if (hoverElement) {
-      if (hoverElement === key) {
-        return imageWidthWithHover;
-      } else {
-        return remainingImageWidth;
-      }
-    } else {
-      return imageWidth;
-    }
-  };
-
   return (
     <Layout>
       <div className="flex h-full items-center">
         <Wrapper>
-          <div className="flex" ref={containerRef}>
+          <div className="flex gap-4">
             {imagesKeys.map((key) => {
               const imageKey = key + 1;
               return (
-                <img
-                  src={`/${imageKey}.jpg`}
-                  alt="imagen"
-                  key={imageKey}
-                  style={{ width: getImageWidth(imageKey) }}
-                  onMouseEnter={() => setHoverElement(imageKey)}
-                  onMouseLeave={() => setHoverElement(undefined)}
-                  className="object-contain transition-width duration-300"
-                />
+                <div key={imageKey} className="flex-1   ">
+                  <img src={`/${imageKey}.jpg`} alt="imagen" />
+                </div>
               );
             })}
           </div>
