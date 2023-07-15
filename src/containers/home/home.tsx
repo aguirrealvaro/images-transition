@@ -11,7 +11,7 @@ const Home: FunctionComponent = () => {
   return (
     <div className="flex h-full items-center">
       <Wrapper>
-        <div className="flex gap-2">
+        <div className="flex gap-2 md:flex-col">
           {imagesKeys.map((key) => {
             const imageKey = key + 1;
             return (
