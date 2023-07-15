@@ -8,4 +8,3 @@ Practicing with View Transitions API. Clone of [https://shu-gallery.vercel.app/]
 - Responsive
 - Fix transitions
 - support for browsers
-- add source code

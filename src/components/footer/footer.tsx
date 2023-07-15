@@ -35,7 +35,7 @@ const Footer: FunctionComponent = () => {
               className="underline"
             >
               https://shu-gallery.vercel.app
-            </a>{" "}
+            </a>
           </p>
         </div>
       </Wrapper>
