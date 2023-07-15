@@ -8,7 +8,7 @@ const imagesKeys = Array.from(Array(5).keys());
 const Header: FunctionComponent = () => {
   const navigate = useNavigate();
   return (
-    <header className="my-12">
+    <header className="my-10">
       <Wrapper>
         <div className=" flex w-full flex-col items-center justify-center">
           <h1 className="mb-6 text-3xl text-text-heading">

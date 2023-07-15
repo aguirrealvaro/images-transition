@@ -9,7 +9,7 @@ const ImagePage: FunctionComponent = () => {
   const isEven = image ? parseInt(image) % 2 === 1 : false;
 
   return (
-    <div className="flex h-full items-center">
+    <div className="flex flex-1 items-center">
       <Wrapper>
         <div className={cn("flex gap-12", isEven ? "flex-row" : "flex-col")}>
           <div className="flex-1">
