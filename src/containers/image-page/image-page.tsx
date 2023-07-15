@@ -25,7 +25,7 @@ const ImagePage: FunctionComponent = () => {
             <p
               className="text-text-secondary"
               //@ts-ignore
-              style={{ viewTransitionName: `lorem-ipsum-paragraph` }}
+              style={{ viewTransitionName: `paragraph` }}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod reiciendis
               rerum, alias voluptas distinctio quibusdam dicta, accusamus aut vel provident,
