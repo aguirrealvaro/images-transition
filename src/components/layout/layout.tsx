@@ -4,7 +4,7 @@ import { Footer, Header, SourceCode } from "@/components";
 
 const Layout: FunctionComponent = () => {
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex min-h-screen flex-col">
       <SourceCode />
       <Header />
       <main className="flex-1">

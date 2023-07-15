@@ -2,6 +2,7 @@ import { flushSync } from "react-dom";
 import { FunctionComponent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Wrapper } from "@/components";
+import { cn } from "@/utils/cn";
 
 const imagesKeys = Array.from(Array(5).keys());
 
@@ -32,7 +33,10 @@ const Home: FunctionComponent = () => {
                 <img
                   src={`/${imageKey}.jpg`}
                   alt="imagen"
-                  className="h-96 rounded-sm object-cover"
+                  className={cn(
+                    "h-96 rounded-sm object-cover",
+                    "md:h-36 md:w-full md:transition-height md:duration-300 md:hover:h-52"
+                  )}
                   //@ts-ignore
                   style={{ viewTransitionName: `image-${imageKey}` }}
                 />

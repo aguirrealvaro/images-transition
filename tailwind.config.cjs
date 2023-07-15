@@ -20,6 +20,7 @@ module.exports = {
       },
       transitionProperty: {
         flex: "flex",
+        height: "height",
       },
     },
   },
