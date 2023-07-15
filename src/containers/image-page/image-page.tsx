@@ -22,7 +22,11 @@ const ImagePage: FunctionComponent = () => {
             />
           </div>
           <div className="flex flex-1 items-center">
-            <p className="text-text-secondary">
+            <p
+              className="text-text-secondary"
+              //@ts-ignore
+              style={{ viewTransitionName: `lorem-ipsum-paragraph` }}
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod reiciendis
               rerum, alias voluptas distinctio quibusdam dicta, accusamus aut vel provident,
               magnam animi molestiae saepe at a repellendus porro adipisci.
