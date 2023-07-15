@@ -24,7 +24,7 @@ const ImagePage: FunctionComponent = () => {
               style={{ viewTransitionName: `image-${image}` }}
             />
           </div>
-          <div className="flex flex-1 items-center">
+          <div className="flex-1">
             <p
               className="text-text-secondary"
               //@ts-ignore
