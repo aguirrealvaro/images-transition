@@ -3,7 +3,7 @@ import { Wrapper } from "@/components";
 
 const Footer: FunctionComponent = () => {
   return (
-    <footer className="py-10">
+    <footer className="my-10">
       <Wrapper>
         <div className="flex flex-col items-center justify-center gap-2 text-center text-sm text-text-secondary">
           <p>

@@ -7,7 +7,7 @@ const Layout: FunctionComponent = () => {
     <div className="flex min-h-screen flex-col">
       <SourceCode />
       <Header />
-      <main className="flex-1">
+      <main className="flex flex-1 flex-col">
         <Outlet />
       </main>
       <Footer />

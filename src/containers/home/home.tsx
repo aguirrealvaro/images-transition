@@ -10,7 +10,7 @@ const Home: FunctionComponent = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-full items-center">
+    <div className="flex flex-1 items-center">
       <Wrapper>
         <div className="flex gap-2 md:flex-col">
           {imagesKeys.map((key) => {
