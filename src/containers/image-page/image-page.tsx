@@ -11,7 +11,7 @@ const ImagePage: FunctionComponent = () => {
   return (
     <div className="flex flex-1 items-center">
       <Wrapper>
-        <div className={cn("flex gap-12", isEven ? "flex-row" : "flex-col")}>
+        <div className={cn("flex items-center gap-12", isEven ? "flex-row" : "flex-col")}>
           <div className="flex-1">
             <img
               src={`/${image}.jpg`}

@@ -29,7 +29,7 @@ const Header: FunctionComponent = () => {
             </a>
           </h1>
           <nav>
-            <ul className="flex gap-4">
+            <ul className="flex gap-4 text-center">
               {imagesKeys.map((key) => {
                 const imageKey = key + 1;
                 return (
