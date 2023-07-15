@@ -34,7 +34,7 @@ const Home: FunctionComponent = () => {
                   src={`/${imageKey}.jpg`}
                   alt="imagen"
                   className={cn(
-                    "h-96 rounded-sm object-cover",
+                    "h-96 animate-fade-in rounded-sm object-cover",
                     "md:h-36 md:w-full md:transition-height md:duration-300 md:hover:h-52"
                   )}
                   //@ts-ignore

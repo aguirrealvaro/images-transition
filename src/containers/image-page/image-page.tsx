@@ -16,7 +16,10 @@ const ImagePage: FunctionComponent = () => {
             <img
               src={`/${image}.jpg`}
               alt="imagen"
-              className={cn("rounded-lg shadow-2xl", isEven ? "" : "mx-auto w-1/2")}
+              className={cn(
+                "animate-fade-in rounded-lg shadow-2xl",
+                isEven ? "" : "mx-auto w-1/2"
+              )}
               //@ts-ignore
               style={{ viewTransitionName: `image-${image}` }}
             />

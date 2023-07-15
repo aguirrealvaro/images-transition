@@ -18,6 +18,15 @@ module.exports = {
       flex: {
         1.5: "1.5 1.5 0%",
       },
+      keyframes: {
+        "fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 150ms ease-in",
+      },
       transitionProperty: {
         flex: "flex",
         height: "height",
