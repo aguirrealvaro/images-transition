@@ -21,7 +21,7 @@ const ImagePage: FunctionComponent = () => {
                 isEven ? "" : "mx-auto w-1/2"
               )}
               //@ts-ignore
-              style={{ viewTransitionName: `image-${image}` }}
+              style={{ viewTransitionName: `image` }}
             />
           </div>
           <div className="flex-1">

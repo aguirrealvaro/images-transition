@@ -38,7 +38,7 @@ const Home: FunctionComponent = () => {
                     "md:h-36 md:w-full md:transition-height md:duration-300 md:hover:h-52"
                   )}
                   //@ts-ignore
-                  style={{ viewTransitionName: `image-${imageKey}` }}
+                  style={{ viewTransitionName: `image` }}
                 />
               </a>
             );
